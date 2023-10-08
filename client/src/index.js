@@ -5,12 +5,17 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Homepage from './components/Homepage/Homepage';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import PlayerOnePage from './components/PlayerOnePage/PlayerOnePage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Homepage />,
     errorElement: <ErrorPage />
+  },
+  {
+    path: "/playerone",
+    element: <PlayerOnePage />
   }
 ])
 
